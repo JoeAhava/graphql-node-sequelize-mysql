@@ -1,11 +1,23 @@
 {
-  "name": "graphql-node",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.2",
-    "express-graphql": "^0.12.0",
-    "graphql": "^16.2.0"
-  }
+	"name": "graphql-node",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"type": "commonjs",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.2",
+		"express-graphql": "^0.12.0",
+		"graphql": "^16.2.0",
+		"mysql2": "^2.3.3",
+		"sequelize": "^6.12.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15",
+		"sequelize-cli": "^6.3.0"
+	}
 }
